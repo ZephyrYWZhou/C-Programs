@@ -97,5 +97,28 @@
         index++;
     }
 
+    printf("-----------------------------------\n");
+
+    /*
+     * We can explore something interesting using pointers.
+     */
+
+    int arr_4[5] = {10, 20, 30, 40, 50};
+    printf("What is arr_4 exctly? A pointer! %p\n", arr_4);
+    printf("This is address of the first element of the arry: %p\n", &arr_4[0]);
+
+    //Here, we can take a look at an intriguing staff.
+
+    long whatIsThis = &arr_4[3] - arr_4;
+    printf("what is this? -> %li\n", whatIsThis);
+
+    /*
+     * Bascally, this "thing" is the address of third element of the array minus
+     * the address of the first element of the array. However, instead of returning
+     * the long and insipid "address difference", the program "smartly" does the 
+     * transferring for us and return the "unit difference" between these two address,
+     * which is the index difference between these two elements!
+     */
+
     return (0);
  }
