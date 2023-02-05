@@ -1,7 +1,7 @@
 /*
- * Chapter 1: Printing 
+ * Chapter 1: Printing Result
  *
- * Description:
+ * Description: 
  *
  * Author: Zephyr Zhou
  * 
